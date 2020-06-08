@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #contact_one {
+        background: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png')
+          no-repeat center center fixed;
+        background-size: cover;
+        /* background-image: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; */
+        width: 100%;
+        height: 500px;
+        position: relative;
+      }
+      @keyframes specialanim {
+        from {
+          top: -315px;
+        }
+        to {
+          top: 50px;
+        }
+      }
+      .specialoffer {
+        position: absolute;
+        top: -315px;
+        right: 100px;
+        animation: specialanim 1s ease 0.5s 1 forwards;
+      }
+      .contact_one_text {
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      @keyframes locationcent {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .locatedcentered {
+        text-align: center;
+        margin: 90px auto;
+      }
+      .locatedcentered > p {
+        width: 60%;
+        display: inline-block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        text-align: center;
+        color: #333333;
+        opacity: 0;
+        animation: locationcent 1.3s ease 1.5s 1 forwards;
+      }
+      .locatedbolder {
+        font-size: 32px;
+        font-weight: bolder;
+      }
+      section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 0 auto;
+        width: 70%;
+      }
+      aside {
+        font-size: 18px;
+        align-self: center;
+      }
+      form h4 {
+        padding: 15px 10px;
+      }
+      .required input {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 10px 5px;
+        border: 1px solid #144673;
+        border-radius: 8px;
+        font-size: 18px;
+      }
+      #message {
+        max-width: 493px;
+        width: 90%;
+        height: 100px;
+      }
+      input[type='button'] {
+        max-width: 530px;
+        background: #144673;
+        color: white;
+      }
+      .inline {
+        display: flex;
+        width: 100%;
+        align-items: baseline;
+      }
+      i {
+        padding: 10px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        section {
+          grid-template-columns: 1fr;
+        }
+        aside {
+          margin-top: 90px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contact_one">
+      <div class="contact_one_text">
+        <h1>CONTACT US</h1>
+      </div>
+      <div class="specialoffer">
+        <img
+          src="https://res.cloudinary.com/dtyrfo0fx/image/upload/v1591633734/hng%20granite/specialoffer.svg"
+          alt="Special Offer on Booking 80% off"
+        />
+      </div>
+    </div>
+    <div class="locatedcentered">
+      <p class="locatedbolder">Where is the hotel located</p>
+      <br />
+      <p>
+        It is located in the heart of Lagos, with serene environment where you
+        have the view of your liife time seeing the oceans
+      </p>
+    </div>
+    <section>
+      <form>
+        <h4>
+          SEND US AN EMAIL
+        </h4>
+        <div class="required">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            required
+          /><br />
+          <input type="email" required placeholder="Email" required />
+          <input
+            type="tel"
+            required
+            placeholder="Phone Number"
+            required
+          /><br />
+          <input type="text" id="message" placeholder="Message" /><br />
+          <input type="button" value="Submit Now" />
+        </div>
+      </form>
+      <aside>
+        <h3>CONTACT INFO</h3>
+        <div class="inline">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>
+            Eko Atlantic, Lagos State Nigeria
+          </p>
+        </div>
+        <div class="inline">
+          <i class="fas fa-phone"></i>
+          <p>+234(0)803-333-3333</p>
+        </div>
+        <div class="inline">
+          <i class="far far fa-envelope"></i>
+          <a href="">info@hotelfranz.com</a>
+        </div>
+        <div>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </aside>
+    </section>
+  </body>
+</html>
