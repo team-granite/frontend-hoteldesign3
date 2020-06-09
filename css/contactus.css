@@ -130,6 +130,7 @@ button {
 
 .contactussection input {
   width: 48%;
+  margin-bottom: 10px;
 }
 
 .contactussection input[type='button'],
