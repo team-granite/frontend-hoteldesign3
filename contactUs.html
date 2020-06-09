@@ -1,183 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      #contact_one {
-        background: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png')
-          no-repeat center center fixed;
-        background-size: cover;
-        /* background-image: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center; */
-        width: 100%;
-        height: 500px;
-        position: relative;
-      }
-      @keyframes specialanim {
-        from {
-          top: -315px;
-        }
-        to {
-          top: 50px;
-        }
-      }
-      .specialoffer {
-        position: absolute;
-        top: -315px;
-        right: 100px;
-        animation: specialanim 1s ease 0.5s 1 forwards;
-      }
-      .contact_one_text {
-        color: white;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-      @keyframes locationcent {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      .locatedcentered {
-        text-align: center;
-        margin: 90px auto;
-      }
-      .locatedcentered > p {
-        width: 60%;
-        display: inline-block;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 28px;
-        text-align: center;
-        color: #333333;
-        opacity: 0;
-        animation: locationcent 1.3s ease 1.5s 1 forwards;
-      }
-      .locatedbolder {
-        font-size: 32px;
-        font-weight: bolder;
-      }
-      section {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        margin: 0 auto;
-        width: 70%;
-      }
-      aside {
-        font-size: 18px;
-        align-self: center;
-      }
-      form h4 {
-        padding: 15px 10px;
-      }
-      .required input {
-        text-decoration: none;
-        display: inline-block;
-        padding: 12px 20px;
-        margin: 10px 5px;
-        border: 1px solid #144673;
-        border-radius: 8px;
-        font-size: 18px;
-      }
-      #message {
-        max-width: 493px;
-        width: 90%;
-        height: 100px;
-      }
-      input[type='button'] {
-        max-width: 530px;
-        background: #144673;
-        color: white;
-      }
-      .inline {
-        display: flex;
-        width: 100%;
-        align-items: baseline;
-      }
-      i {
-        padding: 10px;
-      }
 
-      @media only screen and (max-width: 767px) {
-        section {
-          grid-template-columns: 1fr;
-        }
-        aside {
-          margin-top: 90px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="contact_one">
-      <div class="contact_one_text">
-        <h1>CONTACT US</h1>
-      </div>
-      <div class="specialoffer">
-        <img
-          src="https://res.cloudinary.com/dtyrfo0fx/image/upload/v1591633734/hng%20granite/specialoffer.svg"
-          alt="Special Offer on Booking 80% off"
-        />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+
+  <!-- syles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contactus.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel=”stylesheet” href=”css/bootstrap.css”>
+  <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <header class ="d-flex flex-row justify-content-between p-4">
+    <span class="landingpage-header-logo p-2">
+        HOTELFRENZ
+    </span>
+    <nav class="">
+      <ul class="nav justify-content-end">
+          <li class="nav-item header-nav-item">
+            <a class=" class-home nav-link active" href="#">HOME</a>
+          </li>
+          <li class="nav-item header-nav-item">
+            <a class=" class-room nav-link" href="#">ROOMS & SUITES</a>
+          </li>
+          <li class="nav-item header-nav-item">
+            <a class="  class-fac nav-link" href="#">FACILITIES</a>
+          </li>
+          <li class="nav-item header-nav-item ">
+              <a class=" class-contact nav-link" href="#">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+  <div id="contact_one">
+    <div class="contact_one_text">
+      <h1>CONTACT US</h1>
+    </div>
+    <div class="specialoffer">
+      <img src="https://res.cloudinary.com/dtyrfo0fx/image/upload/v1591633734/hng%20granite/specialoffer.svg"
+        alt="Special Offer on Booking 80% off" />
+    </div>
+  </div>
+  <div class="locatedcentered">
+    <p class="locatedbolder">Where is the hotel located</p>
+    <br />
+    <p>
+      It is located in the heart of Lagos, with serene environment where you
+      have the view of your life time seeing the oceans
+    </p>
+  </div>
+  <div id="contact_map">
+    <div class="contact_map_action">
+      <div>
+        <p>Click on the button to show map</p>
+        <button>Show the Map</button>
       </div>
     </div>
-    <div class="locatedcentered">
-      <p class="locatedbolder">Where is the hotel located</p>
-      <br />
-      <p>
-        It is located in the heart of Lagos, with serene environment where you
-        have the view of your liife time seeing the oceans
-      </p>
-    </div>
-    <section>
+    <section class="contactussection">
       <form>
         <h4>
           SEND US AN EMAIL
         </h4>
         <div class="required">
-          <input
-            type="text"
-            name="firstName"
-            placeholder="First Name"
-            required
-          />
-          <input
-            type="text"
-            name="lastName"
-            placeholder="Last Name"
-            required
-          /><br />
-          <input type="email" required placeholder="Email" required />
-          <input
-            type="tel"
-            required
-            placeholder="Phone Number"
-            required
-          /><br />
-          <input type="text" id="message" placeholder="Message" /><br />
+          <div>
+            <input type="text" name="firstName" placeholder="First Name" required />
+            <input type="text" name="lastName" placeholder="Last Name" required />
+          </div>
+          <div>
+            <input type="email" required placeholder="Email" required />
+            <input type="tel" required placeholder="Phone Number" required />
+          </div>
+          <textarea placeholder="message" rows="5"></textarea>
           <input type="button" value="Submit Now" />
         </div>
       </form>
       <aside>
-        <h3>CONTACT INFO</h3>
+        <h4>CONTACT INFO</h4>
         <div class="inline">
           <i class="fas fa-map-marker-alt"></i>
           <p>
@@ -192,7 +100,7 @@
           <i class="far far fa-envelope"></i>
           <a href="">info@hotelfranz.com</a>
         </div>
-        <div>
+        <div class="socials">
           <i class="fab fa-facebook-square"></i>
           <i class="fab fa-twitter-square"></i>
           <i class="fab fa-instagram"></i>
@@ -200,5 +108,33 @@
         </div>
       </aside>
     </section>
-  </body>
+    <script>
+      const showMap = document.querySelector(".contact_map_action")
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+        );
+      }
+
+      const handler = () => {
+        if (isElementInViewport(showMap)) {
+          showMap.children[0].classList.add("contact_map_action_trans")
+        }
+      }
+
+      addEventListener('DOMContentLoaded', handler, false);
+      addEventListener('load', handler, false);
+      addEventListener('scroll', handler, false);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+</body>
+
 </html>
