@@ -202,7 +202,12 @@ button {
   background-color: transparent;
   outline: none;
   box-shadow: none;
+  color: white;
 }
+.pa2 select option {
+  color: black;
+}
+
 ::placeholder {
   color: white !important;
 }
