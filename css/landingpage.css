@@ -211,3 +211,8 @@ button {
 ::placeholder {
   color: white !important;
 }
+
+.pa2 svg {
+  color: white;
+  margin-top: 15px;
+}
