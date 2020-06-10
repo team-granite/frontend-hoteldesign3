@@ -196,3 +196,13 @@ button {
   background: transparent;
   padding: 7px 15px;
 }
+
+.pa2 input:focus,
+.pa2 select:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+::placeholder {
+  color: white !important;
+}
