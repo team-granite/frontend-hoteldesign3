@@ -216,3 +216,47 @@ button {
   color: white;
   margin-top: 15px;
 }
+
+.pa2 input[type='submit'] {
+  outline: none;
+  border: none;
+  border: 0.5px solid white;
+  border-radius: 7px;
+  background-color: transparent !important;
+  color: white;
+  padding: 3px 20px;
+}
+
+.pa2 {
+  margin: 0;
+  align-items: center;
+}
+
+.pa2 .input-group-text {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+.pa2 .input-group-text:nth-child(2) {
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+.pa2 .input-group-prepend {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.carousel-caption button {
+  border: none;
+  padding: 0 15px;
+  min-width: 160px;
+  white-space: nowrap;
+}
+.carousel-caption .bg-info {
+  background-color: rgb(20, 70, 115) !important;
+  color: white;
+}
