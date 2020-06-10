@@ -1,9 +1,4 @@
 # frontend-hoteldesign3
 Implementation of the third hotel website design chosen by the team
 
-
-#Facilities Page
-- Paul
-- _Saphhire
-- Enuma 
-- Acel
+This is a design of hotelfrenz website with contactus,index,rooms and facilities pages.

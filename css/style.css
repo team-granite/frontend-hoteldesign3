@@ -57,7 +57,7 @@ html{
    
    #footer{background: #144673;
        color: #F5FAFF;
-       font-size:1.3vw;
+       font-size:1.3vw !important;
        padding-top: 5%;
        letter-spacing: 0.7px;
        font-family: Roboto;
@@ -107,7 +107,11 @@ html{
    #polka{
     margin-top: 10%;   
    }
-
+   @media(max-width:730px){
+    #footer{
+     font-size:2vw !important;
+    }
+   }
    * {
     margin: 0;
     padding: 0;

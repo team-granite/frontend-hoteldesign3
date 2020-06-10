@@ -318,7 +318,7 @@ body {
         width: 345px ;
     }
     .row {
-        display: block !important;
+        display: block ;
     }
 
     svg {
